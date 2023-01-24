@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.num{
+    padding: 20px 40px;
+    background-color: gray;
+    color: white;
+    
+}
+.cal{
+    /* text-align: center; */
+    margin: 10% 35%;
+}
+.num:hover{
+    background-color: rgba(88, 85, 85, 0.124);
+}

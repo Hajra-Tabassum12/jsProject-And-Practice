@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+   
+    padding: 50px 100px;
+    
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+img{
+    width: 70%;
+    height: auto;
+    padding: 20px 150px;
+   
+
+}
+p{
+        font-size: 20px;  
+        text-align: justify;
+        font-size: 20px;
+        text-align: justify;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 20px;
+   
+    
+}
+#white{
+    background-color: white;
+}
+#lightgreen{
+    background-color: lightgreen;
+}
+#orange{
+    background-color: orangered;
+}
+#black{
+    background-color: black;
+}
+

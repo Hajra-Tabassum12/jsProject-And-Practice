@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-top: 90px;
+    }
+.one{
+    display: inline-block;
+    padding: 30px 30px;
+}
+img{
+    width: 140px;
+    border-radius: 20px;
+}
+p{
+    padding: 20px 20px;
+    font-size: 25px;
+    color: #833471;
+    text-shadow: 0 3px #FEA47F;
+}
+h1{
+    font-size: 4rem;
+    color: #4cd137;
+    text-shadow: 0 4px yellow;
+}
+body{
+    background-color: #487eb0;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #833471;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+
+</style>
+<body>
+        <div class="container">
+            <h1>ludo game</h1>
+
+
+            <div class="one">
+                <p>player 1</p>
+                <img src="./dice-1.jpg" alt="" id="check1">
+            </div>
+
+            
+         <div class="one">
+            <p>player 2</p>
+            <img src="./dice-6.jpg" alt="" id="check2">
+         </div>
+         <div>
+            <button class="btn" onclick="ludo()">click me</button>
+         </div>
+        </div>
+        <script>
+            ludo=()=>{
+            const play1=Math.floor(Math.random()*6)+1;
+            const playdice1=`./dice-${play1}.jpg`;
+            document.getElementById('check1').setAttribute('src',playdice1)
+
+
+
+            const play2=Math.floor(Math.random()*6)+1;
+            const playdice2=`./dice-${play2}.jpg`;
+            document.getElementById('check2').setAttribute('src',playdice2)
+
+           if(play1>play2){
+            document.querySelector('h1').innerHTML='player1 won';
+           }else if(play1<play2){
+            document.querySelector('h1').innerHTML='player2 won';
+           }else{
+            document.querySelector('h1').innerHTML='DRAW';
+           }
+
+
+
+
+            }
+
+
+        </script>
+</body>
+</html>

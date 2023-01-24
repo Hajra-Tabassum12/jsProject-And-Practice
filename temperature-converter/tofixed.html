@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tofixed means decimal hai koi number for ex(8.8765) =isko 9 banake deta -->
+   
+   <!-- 1. -->
+   <script>
+     let num=4.56746;   //op: 5
+     let n = num.toFixed()
+     console.log(n);
+   </script>
+
+   <!-- 2.. -->
+
+   <script>
+    let x= 9.7642578               //4th ke baad ke number ku dekh ke 4th position pe kya rakhna to decide karta 
+    let y=x.toFixed(4)   //(4) decimal ke baad bracket mein jitne number hai utne laga ke deta
+    console.log(y);    //(if x=1.23453788 =>1.235)  ( if x=1.234476 =>  1.2344)
+   </script>          
+</body>
+</html>

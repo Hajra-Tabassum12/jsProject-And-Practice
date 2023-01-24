@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./side.css">
+    <script src="https://kit.fontawesome.com/7b1006eea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="sb" class="sidebar"> </div>
+           <div> <i id="bar" onclick="side()" class="fa-solid fa-bars"></i></div>
+    
+    <div id="lnk" class="link">
+        <a class="a1" href=""><i class="fa-solid fa-house"></i>Home</a> <br>
+        <a   class="a1" href=""><i class="fa-solid fa-gauge"></i>Dashboard</a> <br>
+        <a class="a1" href=""><i class="fa-solid fa-chart-line"></i>Analytics</a> <br>
+        <a class="a1" href=""><i class="fa-solid fa-bell"></i>Notification</a> <br>
+        <a class="a1" href=""><i class="fa-solid fa-gear"></i>setting</a>
+        
+    </div>
+    <script>
+        function side(){
+        //    let ele=document.getElementById('bar');
+                document.getElementById('lnk').style.display='block'
+                document.getElementsByClassName('a1').style.display='block'
+                document.getElementById('sb').style.display='block'
+        }
+    </script>
+</body>
+</html>

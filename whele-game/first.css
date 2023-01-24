@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F44336;
+    background-size: cover;
+}
+.mainbox{
+    position:relative;
+    width: 500px;
+    height: 500px;
+    /* background-color: yellow;   */
+}
+.box{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;  
+}
+span{
+    /* background-color: pink; */
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+.span1{
+    clip-path: polygon(100% 50%, 1% 15%, 0 89%);
+    background-color: brown;
+    top:120px;
+    left:0;
+}
+.span2{
+    clip-path: polygon(50% 50%, 0 8%, 50 56%);
+    background-color: green;
+    top:120px;
+    left:0;
+
+}
+.span3{
+    clip-path: polygon(50% 50%, 1% 15%, 0 89%);
+    background-color: brown;
+    top:120px;
+    left:0;
+
+}
+.span4{
+    clip-path: polygon(50% 50%, 1% 15%, 0 89%);
+    background-color: brown;
+    top:120px;
+    left:0;
+
+}

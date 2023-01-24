@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .myStyle{
+           background-color: yellow; 
+           padding: 10px 15px;
+           text-shadow: 0px 1px red;
+        }
+    </style>
+</head>
+<body>
+    <p id="pp">class given to me</p>
+
+    <button onclick="classStyle()">click me</button>
+<script>
+    classStyle=()=>{
+        //  const newP=document.getElementById('pp').classList;  //first way
+        //  newP.add('myStyle')
+
+        const newP=document.getElementById('pp');   //second way to add class list
+        newP.classList.add('myStyle')
+    }
+    </script>
+</body>
+</html>

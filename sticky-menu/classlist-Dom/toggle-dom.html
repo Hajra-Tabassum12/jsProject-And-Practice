@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style1{
+            color: blue;
+            background-color: pink;
+            text-shadow: 0 2px red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="hh1">you see toggle button effect on me</h1>
+
+<button onclick="my()">click</button>
+<!-- <input type="radio" name="" id="" onclick="my()"> ///bs aise hi kari ye -->
+<!-- <input type="checkbox" name="" id="" onclick="my()"> -->
+
+<script>
+    my=()=>{
+        document.getElementById('hh1').classList.toggle('style1')
+    }
+</script>
+</body>
+</html>
